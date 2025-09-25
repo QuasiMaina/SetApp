@@ -1,23 +1,23 @@
-This project is a full-stack app that helps DOPs, 1st ACs, gaffers, and grips determine what kind of setup and lighting works best for various scenarios.
-It has:
+🎥 Camera & Lighting Setup Management System
 
-Backend (Django + PostgreSQL) → API for setups, users, authentication
+This project is a full-stack web app that helps DOPs, 1st ACs, Gaffers, and Grips determine what kind of camera and lighting setups work best for various film scenarios.
 
-Frontend (React) → User interface to interact with the API.
+It is built with:
 
-#PROJECT STRUCTURE
+Backend: Django + Django REST Framework + PostgreSQL → Provides APIs for setups, users, authentication
+
+Frontend: React + TailwindCSS → Interactive user interface for browsing and uploading setups
+
+📂 Project Structure
 setapp/
-│── backend/        # Django Backend (API + Admin)
+│── backend/          # Django Backend (API + Admin)
 │   └── setapp/
-│
-│── frontend/       # React Frontend (UI)
+│── frontend/         # React Frontend (UI)
 │   └── src/
-│
 │── .gitignore
 │── README.md
 
-⚙️ BACKEND (DJANGO)
-Setup
+⚙️ Backend (Django) Setup
 cd backend
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
@@ -25,7 +25,9 @@ pip install -r requirements.txt
 
 Database
 
-Make sure PostgreSQL is running and update your settings.py with DB credentials.
+Ensure PostgreSQL is running
+
+Update settings.py with your database credentials
 
 Run migrations:
 
@@ -43,37 +45,39 @@ Start server:
 python manage.py runserver
 
 
-API will be available at:
-👉 http://127.0.0.1:8000/api/
+API: 👉 http://127.0.0.1:8000/api/
 
-Admin dashboard:
-👉 http://127.0.0.1:8000/admin/
+Admin dashboard: 👉 http://127.0.0.1:8000/admin/
 
-
-🎨 Frontend (React)
-Setup
+🎨 Frontend (React) Setup
 cd frontend
 npm install
-
-Run
 npm start
 
 
-App will run at:
-👉 http://localhost:3000/
+App will run at 👉 http://localhost:3000/
 
 🔗 Connecting Frontend & Backend
 
-The React app will fetch data from the Django API at http://127.0.0.1:8000/api/.
+The React frontend fetches data from the Django API at:
+👉 http://127.0.0.1:8000/api/
 
-During production, you can configure CORS and serve frontend via Django or deploy them separately.
+For production, configure CORS properly and either:
+
+Serve the frontend via Django, OR
+
+Deploy frontend and backend separately
 
 ✅ Features
 
-📸 Manage setups (types, equipment, crew roles)
+📸 Manage setups (scene type, equipment, crew role, lighting mood, tags)
 
-🔐 JWT authentication (login/register)
+👥 Role-based access (Viewer, Contributor, Admin)
 
-🎬 Admin panel for advanced control
+🔐 JWT authentication (Login/Register)
 
-⚡ React frontend for interactive UI
+🎬 Crew directory (DOPs, Gaffers, Grips, 1st ACs)
+
+⚡ React frontend for interactive dashboards
+
+🛠️ Admin panel for advanced content control

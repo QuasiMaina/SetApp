@@ -1,0 +1,10 @@
+[
+  {
+    "model": "scenarios.scenario",
+    "pk": "6e7f8091-eeee-ffff-0000-555566667777",
+    "fields": {
+      "title": "Night Exterior",
+      "description": "Setup for Nairobi street night shoot with moody atmosphere."
+    }
+  }
+]

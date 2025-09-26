@@ -1,0 +1,13 @@
+[
+  {
+    "model": "landing.landingpage",
+    "pk": "1a2b3c4d-1111-2222-3333-444455556666",
+    "fields": {
+      "title": "Karibu SetApp",
+      "subtitle": "Your all-in-one platform for film crew setups.",
+      "hero_image": "https://example.com/hero.jpg",
+      "cta_text": "Get Started",
+      "cta_link": "/signup"
+    }
+  }
+]

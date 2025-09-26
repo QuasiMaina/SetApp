@@ -1,0 +1,10 @@
+[
+  {
+    "model": "firstac.firstacsetup",
+    "pk": "3b4c5d6e-bbbb-cccc-dddd-222233334444",
+    "fields": {
+      "name": "Quasi Maina",
+      "role": "Focus Puller"
+    }
+  }
+]

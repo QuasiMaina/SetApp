@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import Setup
 
+
 class SetupSerializer(serializers.ModelSerializer):
     created_by_username = serializers.ReadOnlyField(source="created_by.username")
 
@@ -15,5 +16,6 @@ class SetupSerializer(serializers.ModelSerializer):
             "created_by",
             "created_by_username",
             "created_at",
+            "updated_at",  
         ]
-        read_only_fields = ("id", "created_by", "created_at")
+        read_only_fields = ("id", "created_by", "created_at", "updated_at")

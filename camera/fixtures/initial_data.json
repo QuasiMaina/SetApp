@@ -1,0 +1,10 @@
+[
+  {
+    "model": "camera.camerasetup",
+    "pk": "2a3b4c5d-aaaa-bbbb-cccc-111122223333",
+    "fields": {
+      "name": "ARRI Alexa Mini",
+      "lens": "Zeiss CP.3 35mm"
+    }
+  }
+]

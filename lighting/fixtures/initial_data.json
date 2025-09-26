@@ -1,0 +1,10 @@
+[
+  {
+    "model": "lighting.lightingsetup",
+    "pk": "4c5d6e7f-cccc-dddd-eeee-333344445555",
+    "fields": {
+      "name": "Aputure 600D",
+      "type": "Key Light"
+    }
+  }
+]
